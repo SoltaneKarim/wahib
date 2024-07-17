@@ -1,27 +1,57 @@
-import React from 'react';
-import './Navbar.css';
+import React from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="navbar-top">
-        <div className="navbar-logo">
-          <h1>zortrax</h1>
-          <div className="navbar-divider"></div>
-          <p>Global 3D Printers Manufacturer</p>
+    <div>
+      <nav className="navbar">
+        <div className="container d-flex align-items-center justify-content-between">
+          <a className="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="/src/assets/logo-no-background.png"
+              alt="ZORTREX"
+              width="100"
+              height="26"
+            />
+            <div className="vertical-bar"></div> {/* Added vertical bar */}
+            <span className="ml-2">Global 3D Printers Manufacturer</span>
+          </a>
+          <div className="d-flex">
+          <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+            <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Online Store</button>
+          </div>
         </div>
-        <div className="navbar-links">
-          <a href="#find-reseller">Find Reseller</a>
-          <button className="navbar-button">Online Store</button>
-        </div>
-      </div>
-      <div className="navbar-bottom">
-        <a href="#products">Products</a>
-        <a href="#applications">Applications</a>
-        <a href="#software">Software</a>
-        <a href="#incloud">InCloud</a>
-        <a href="#support-service">Support & Service</a>
-        <a href="#3d-printing-services">3D Printing Services</a>
+      </nav>
+      <hr /> {/* Increased width to 30% */}
+      <div>
+        <ul className="nav justify-content-center fw-medium">
+          <li className="nav-item">
+            <a className="nav-link link-dark" aria-current="page" href="#">
+              Products
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link link-dark" href="#">
+              Applications
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link link-dark" href="#">
+              Software
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link link-dark" href="#">
+              Supports & Services
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link link-dark" href="#">
+              3D printing services
+            </a>
+          </li>
+        </ul>
+        
       </div>
     </div>
   );
