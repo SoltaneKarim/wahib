@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    height: auto; /* Ensure the container takes the full viewport height */
+    display: block;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    overflow: hidden; /* Prevents horizontal scrolling */
+    
+  }
+  
+  .bloc1 {
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Make the bloc take the full width of the container */
+    height: 100vh; /* Make the bloc take the full height of the container */
+    margin-bottom: 0.5rem;
+
+  }
+
+  .bloc2 {
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Make the bloc take the full width of the container */
+    height: 100vh; /* Make the bloc take the full height of the container */
+    margin-bottom: 0.5rem;
+
+  }
