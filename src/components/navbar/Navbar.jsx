@@ -7,12 +7,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="container d-flex align-items-center justify-content-between">
           <a className="navbar-brand d-flex align-items-center" href="#">
-            <img
-              src="/src/assets/logo-no-background.png"
-              alt="ZORTREX"
-              width="100"
-              height="26"
-            />
+            <img src="/src/assets/logo-no-background.png" alt="ZORTREX" width="100" height="26" />
             <div className="vertical-bar"></div>
             <p className="text-body-secondary mb-0 ms-2" style={{ fontSize: '15px' }}>Global 3D Printers <br /> Manufacturer</p>
           </a>
