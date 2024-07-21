@@ -1,0 +1,119 @@
+.bloc2 {
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center; /* Center the bloc2 horizontally */
+  align-items: center; /* Center the bloc2 vertically */
+  flex-direction: column; /* Stack the section and text vertically */
+}
+
+.bloc2 section {
+  cursor: pointer;
+  display: flex;
+  width: 34vw;
+  filter: brightness(120%);
+  z-index: 1;
+  position: relative; /* Needed for absolute positioning of text */
+}
+
+.bloc2-div1, .bloc2-div2, .bloc2-div3, .bloc2-div4, .bloc2-div5, .bloc2-div6, .bloc2-div7, .bloc2-div8, .bloc2-div9 {
+  width: 12.5%;
+  height: 30vw;
+  --url: center/34vw url("https://upload.wikimedia.org/wikipedia/commons/f/ff/Terrarc.png");		
+  transition: transform 1s cubic-bezier(.8,-.5,.2,1.4);
+}
+
+.bloc2-div1 {
+  background: left var(--url);
+}
+
+.bloc2-div2 {
+  background: 12.5% var(--url);
+}
+
+.bloc2-div3 {
+  background: 25% var(--url);
+  transform: scaley(.9);
+}
+
+.bloc2-div4 {
+  background: 37.5% var(--url);
+  transform: scaley(1.1);
+}
+
+.bloc2-div5 {
+  background: 50% var(--url);
+  transform: scaley(.9);
+}
+
+.bloc2-div6 {
+  background: 62.5% var(--url);
+  transform: scaley(1.1);
+}
+
+.bloc2-div7 {
+  background: 75% var(--url);
+  transform: scaley(.8);
+}
+
+.bloc2-div8 {
+  background: 87.5% var(--url);
+  transform: scaley(1);
+}
+
+.bloc2-div9 {
+  background: 100% var(--url);
+  transform: scaley(1.1);
+}
+
+.bloc2 section:hover .bloc2-div8,
+.bloc2 section:hover .bloc2-div6 {
+  transition-delay: .5s;
+}
+
+.bloc2 section:hover .bloc2-div4,
+.bloc2 section:hover .bloc2-div1 {
+  transition-delay: .6s;
+}
+
+.bloc2 section:hover .bloc2-div3,
+.bloc2 section:hover .bloc2-div9 {
+  transition-delay: .2s;
+}
+
+.bloc2 section:hover .bloc2-div2,
+.bloc2 section:hover .bloc2-div7,
+.bloc2 section:hover .bloc2-div5 {
+  transition-delay: .4s;
+}
+
+.bloc2 section:hover div {
+  transform: translateX(300%);
+}
+
+.bloc2 p {
+  font-family: courier new;
+  font-size: 2vw;
+  font-weight: bold;
+  color: black;
+  margin-top: 1rem;
+  opacity: 0; /* Hide the text initially */
+  transition: opacity 1.5s ease; /* Smooth transition for showing text */
+  position: absolute; /* Position text absolutely within the section */
+  bottom: 0; /* Align text to the bottom */
+  left: 20%; /* Center text horizontally */
+  transform: translateX(-50%); /* Center text horizontally */
+  top: 35%;
+}
+
+.bloc2 section:hover p {
+  opacity: 1; /* Show the text on hover */
+}
+
+@media(max-width:720px) {
+  .bloc2 section, .bloc2 p {
+    transform: scale(1.5);
+  }
+}
